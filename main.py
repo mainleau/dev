@@ -84,7 +84,7 @@ def main():
     enlightened = ''
 
     for a, b, c in array:
-        enlightened = f"{b} {result[b]} {a} x {c}€ = {int(a)*int(c)}€\n"
+        enlightened += f"{b} {result[b]} {a} x {c}€ = {int(a)*int(c)}€\n"
 
     File = open('enlightenedBill.txt', 'w')
     File.write(enlightened)
