@@ -35,8 +35,6 @@ def get_third_point_equilateral(a, b, direction):
 
 def flocon(canvas, a, b, direction, deepness, deepness_max=4):
     vector = Vector(a, b)
-    nv = [*vector.normalize()][0]
-    l = vector.magnitude
 
     v1 = vector.normalize() * vector.magnitude * 1/3
     v2 = vector.normalize() * vector.magnitude * 2/3
